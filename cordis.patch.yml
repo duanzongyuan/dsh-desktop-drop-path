@@ -1,0 +1,9 @@
+# dsh-desktop-drop-path bundle patch layer.
+# Inserts the plugin's sole Loader entry. The client half is discovered
+# automatically by the ClientModuleRegistry through the package's `dsh.client`
+# declaration; the host half is a no-op.
+- insert:
+    - id: desktop-drop-path
+      name: dsh-desktop-drop-path
+      config:
+        enabled: true

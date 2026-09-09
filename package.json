@@ -1,0 +1,62 @@
+{
+  "name": "dsh-desktop-drop-path",
+  "version": "0.1.0",
+  "description": "Drag a file into the composer to auto-fill its absolute path. Desktop app only (relies on the Electron preload path bridge).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0 <5"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duanzongyuan/dsh-desktop-drop-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duanzongyuan/dsh-desktop-drop-path/issues"
+  },
+  "homepage": "https://github.com/duanzongyuan/dsh-desktop-drop-path#readme",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "drag-drop",
+    "file-path",
+    "desktop",
+    "cordis"
+  ],
+  "license": "MIT"
+}
