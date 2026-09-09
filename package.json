@@ -18,6 +18,7 @@
     "lib/client.js",
     "cordis.patch.yml",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE"
   ],
   "dsh": {
@@ -51,11 +52,19 @@
   "keywords": [
     "deepseek",
     "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-ai",
+    "harness",
     "dsh",
     "dsh-plugin",
+    "dsh-desktop",
+    "dsh-plugin-desktop",
+    "desktop",
+    "plugin",
     "drag-drop",
     "file-path",
-    "desktop",
+    "file-upload",
+    "attach",
     "cordis"
   ],
   "license": "MIT"

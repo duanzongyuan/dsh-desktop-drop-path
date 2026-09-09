@@ -1,5 +1,7 @@
 # dsh-desktop-drop-path
 
+> **English** | [中文](./README.zh-CN.md)
+
 Drag a file into the DSH composer to **auto-fill its absolute path**.
 
 > **Desktop only.** This plugin resolves a file's real absolute path through the
